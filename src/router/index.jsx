@@ -5,6 +5,7 @@ import { Page1DetailB } from "../Page1DetailB";
 import { Page2 } from "../Page2";
 import { UrlParameter } from "../UrlParameter";
 
+// 新しく追加する場合には、path,elementを作成
 export const routes = [
   {
     path: "/",
