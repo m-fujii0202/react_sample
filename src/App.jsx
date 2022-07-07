@@ -1,18 +1,8 @@
-import { BrowserRouter, Link } from "react-router-dom";
-import { Router } from "./router/Router";
+import { useRoutes } from "react-router-dom";
+import { routes } from "./router";
 import "./App.css";
 
 export default function App() {
-  return (
-    <BrowserRouter>
-      <div className="App">
-        <Link to="/">Home</Link>
-        <br />
-        <Link to="/page1">Page1</Link>
-        <br />
-        <Link to="/page2">Page2</Link>
-      </div>
-      <Router />
-    </BrowserRouter>
-  );
+  const router = useRoutes(routes);
+  return router;
 }
