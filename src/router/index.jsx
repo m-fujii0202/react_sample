@@ -5,7 +5,7 @@ import { Page1DetailB } from "../Page1DetailB";
 import { Page2 } from "../Page2";
 import { UrlParameter } from "../UrlParameter";
 
-// 新しく追加する場合には、path,elementを作成
+// 新しく追加する場合には、path,elementを作成する
 export const routes = [
   {
     path: "/",
@@ -29,6 +29,6 @@ export const routes = [
   },
   {
     path: "/page2/:id",
-    chiidlen: <UrlParameter />,
+    element: <UrlParameter />,
   },
 ];
